@@ -1,0 +1,40 @@
+.list{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-list{
+    display: flex;
+    width: 300px;
+    /* justify-content: center; */
+}
+
+.btn-list{
+    float: right;
+    border: none;
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+}
+
+.text{
+    float: left;
+    /* display: inline; */
+}
+
+.inpt-chk{
+    float: left;
+    /* display: inline; */
+
+}
+
+.list-completed{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
