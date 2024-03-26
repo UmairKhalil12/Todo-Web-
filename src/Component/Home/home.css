@@ -1,0 +1,52 @@
+/* Home.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .input-add-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: right;
+  }
+  
+  .btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .count {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+  }
+
+
+  .todo-container{
+    display: flex;
+    justify-content: center;
+  }
+  

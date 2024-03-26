@@ -1,40 +1,44 @@
-.list{
-    list-style-type: none;
-    text-decoration: none;
+.list {
     display: flex;
-    justify-content: space-between;
-    
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    /* border: 1px solid black; */
 }
 
-.container-list{
+.list-completed {
     display: flex;
-    width: 300px;
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    opacity: 0.7; 
+    /* border: 1px solid black; */
+    /* width: 100%; */
 }
 
-.btn-list{
-    float: right;
+/* .inpt-chk {
+    margin-right: 8px;
+}
+
+ */
+
+/* .text {
+    margin: 0;
+} */
+
+.btn-list {
+    background-color: #f44336; 
+    color: #fff;
     border: none;
-    height: 55px;
-    width: 55px;
-    background-color: transparent;
+    padding: 8px;
+    cursor: pointer;
 }
 
-.text{
-    float: left;
-    /* display: inline; */
+.btn-list:hover {
+    background-color: #d32f2f; 
 }
 
-.inpt-chk{
-    float: left;
-    /* display: inline; */
-
-}
-
-.list-completed{
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-}
+ .inpt-chk , .delete-btn , .task-para{
+    width: 33%;
+ }
 

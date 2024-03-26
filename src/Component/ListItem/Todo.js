@@ -2,19 +2,29 @@ import React from 'react'
 import "./styles.css"
 import { FaTrashCan } from "react-icons/fa6";
 
-function Todo({ todo, toggleComplete , deleteTodo }) {
+function Todo({ todo, toggleComplete, deleteTodo }) {
     return (
         <>
-        <li className={todo.completed ? `list` : `list-completed`}>
-            <input type='checkbox' className='inpt-chk' checked={todo.completed ? `checked` : ``} 
-            onChange={()=>toggleComplete(todo)}
-            />
-            {todo.completed ?  <p className='text'><s>{todo.text}</s></p>  : <p className='text'>{todo.text}</p> }
-           &nbsp; &nbsp;
-            <button className='btn-list'onClick={()=>deleteTodo(todo.id)}>{<FaTrashCan />}</button>
-        </li>
-        <hr/> 
-    </>
+                <div className={todo.completed ? `list` : `list-completed`}>
+                    <div className='inpt-chk'>
+                        <input
+                            type='checkbox'
+                            checked={todo.completed ? `checked` : ``}
+                            onChange={() => toggleComplete(todo)}
+                        />
+                    </div>
+
+                    <div className='task-para'>
+                        {todo.completed ? <p className='text'><s>{todo.task}</s></p> : <p className='text'>{todo.task}</p>}
+                    </div>
+
+                    <div className='delete-btn'>
+                        <button className='btn-list' onClick={() => deleteTodo(todo.id)}>{<FaTrashCan />}</button>
+                    </div>
+
+                </div>
+            <hr />
+        </>
     )
 }
 

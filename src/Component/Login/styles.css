@@ -1,0 +1,17 @@
+.container-login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.container-2-login label , input{
+    width: 500px;
+    height: 30px;
+    font-size: large;
+}
+
+.container-2-login button{
+    width: 510px;
+    font-size: large;
+}
